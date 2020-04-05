@@ -25,3 +25,7 @@ Todo-List-BE is a backend project in which all the APIs are defined which is con
 
 
 
+##View of the running application
+![alt text](https://raw.githubusercontent.com/Bishalj/Todo-LIST-FE/master/src/assets/Todo%20List.png)
+
+
