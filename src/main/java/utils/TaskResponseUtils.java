@@ -9,68 +9,68 @@ public class TaskResponseUtils {
 
 	
 	public static TaskResponseMapper createSuccessResponse() {
-		TaskResponseMapper trm = new TaskResponseMapper();
-		trm.setMessage("Successful");
-		trm.setStatus(200);
-		return trm;
+		TaskResponseMapper taskResponseMapper = new TaskResponseMapper();
+		taskResponseMapper.setMessage("Successful");
+		taskResponseMapper.setStatus(200);
+		return taskResponseMapper;
 	}
 	
 	public static  TaskResponseMapper createSuccessResponse(String message) {
-		TaskResponseMapper trm = new TaskResponseMapper();
-		trm.setMessage(message);
-		trm.setStatus(200);
-		return trm;
+		TaskResponseMapper taskResponseMapper = new TaskResponseMapper();
+		taskResponseMapper.setMessage(message);
+		taskResponseMapper.setStatus(200);
+		return taskResponseMapper;
 	}
 	
 	public  static TaskResponseMapper createErrorResponse() {
-		TaskResponseMapper trm = new TaskResponseMapper();
-		trm.setMessage("Error");
-		trm.setStatus(500);
-		return trm;
+		TaskResponseMapper taskResponseMapper = new TaskResponseMapper();
+		taskResponseMapper.setMessage("Error");
+		taskResponseMapper.setStatus(500);
+		return taskResponseMapper;
 	}
 	
 	public  static TaskResponseMapper createSuccessResponse(Task t) {
-		TaskResponseMapper trm = new TaskResponseMapper();
-		trm.setMessage("Successful");
-		trm.setStatus(200);
-		trm.setTask(t);
-		return trm;
+		TaskResponseMapper taskResponseMapper = new TaskResponseMapper();
+		taskResponseMapper.setMessage("Successful");
+		taskResponseMapper.setStatus(200);
+		taskResponseMapper.setTask(t);
+		return taskResponseMapper;
 	}
 	
 	public  static TaskResponseMapper createSuccessResponse(Task t, String message) {
-		TaskResponseMapper trm = new TaskResponseMapper();
-		trm.setMessage(message);
-		trm.setStatus(200);
-		trm.setTask(t);
-		return trm;
+		TaskResponseMapper taskResponseMapper = new TaskResponseMapper();
+		taskResponseMapper.setMessage(message);
+		taskResponseMapper.setStatus(200);
+		taskResponseMapper.setTask(t);
+		return taskResponseMapper;
 	}
 	
 	public  static TaskResponseMapper createSuccessResponse(List<Task> t, String message) {
-		TaskResponseMapper trm = new TaskResponseMapper();
-		trm.setMessage(message);
-		trm.setStatus(200);
-		trm.setTasks(t);
-		return trm;
+		TaskResponseMapper taskResponseMapper = new TaskResponseMapper();
+		taskResponseMapper.setMessage(message);
+		taskResponseMapper.setStatus(200);
+		taskResponseMapper.setTasks(t);
+		return taskResponseMapper;
 	}
 	
 	public  static TaskResponseMapper createSuccessResponse(List<Task> t) {
-		TaskResponseMapper trm = new TaskResponseMapper();
-		trm.setStatus(200);
-		trm.setTasks(t);
-		return trm;
+		TaskResponseMapper taskResponseMapper = new TaskResponseMapper();
+		taskResponseMapper.setStatus(200);
+		taskResponseMapper.setTasks(t);
+		return taskResponseMapper;
 	}
 	
 	public  static TaskResponseMapper createErrorResponse(String message) {
-		TaskResponseMapper trm = new TaskResponseMapper();
-		trm.setMessage(message);
-		trm.setStatus(500);
-		return trm;
+		TaskResponseMapper taskResponseMapper = new TaskResponseMapper();
+		taskResponseMapper.setMessage(message);
+		taskResponseMapper.setStatus(500);
+		return taskResponseMapper;
 	}
 	
 	public  static TaskResponseMapper createNotFoundResponse() {
-		TaskResponseMapper trm = new TaskResponseMapper();
-		trm.setMessage("Not Found");
-		trm.setStatus(404);
-		return trm;
+		TaskResponseMapper taskResponseMapper = new TaskResponseMapper();
+		taskResponseMapper.setMessage("Not Found");
+		taskResponseMapper.setStatus(404);
+		return taskResponseMapper;
 	}
 }

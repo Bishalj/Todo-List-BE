@@ -25,29 +25,29 @@ public class TodoListController {
 
 	@PostMapping("/addUpdate")
 	public ResponseEntity<TaskResponseMapper> addUpdateTask(@RequestBody TaskRequestMapper taskRequestMapper){
-		TaskResponseMapper t = todoListService.addUpdateTask(taskRequestMapper);
-		return new ResponseEntity<TaskResponseMapper>(t, HttpStatus.resolve(t.getStatus()));
+		TaskResponseMapper taskResponseMapper = todoListService.addUpdateTask(taskRequestMapper);
+		return new ResponseEntity<TaskResponseMapper>(taskResponseMapper, HttpStatus.resolve(taskResponseMapper.getStatus()));
 		
 	}
 	
 	@GetMapping("/find/{title}")
 	public ResponseEntity<TaskResponseMapper> getTaskByTitle(@PathVariable String title){
-		TaskResponseMapper t = todoListService.findByTitle(title);
-		return new ResponseEntity<TaskResponseMapper>(t, HttpStatus.resolve(t.getStatus()));
+		TaskResponseMapper taskResponseMapper = todoListService.findByTitle(title);
+		return new ResponseEntity<TaskResponseMapper>(taskResponseMapper, HttpStatus.resolve(taskResponseMapper.getStatus()));
 		
 	}
 	
 	@GetMapping("/find")
 	public ResponseEntity<TaskResponseMapper> getAllTask(){
-		TaskResponseMapper t = todoListService.findAll();
-		return new ResponseEntity<TaskResponseMapper>(t, HttpStatus.resolve(t.getStatus()));
+		TaskResponseMapper taskResponseMapper = todoListService.findAll();
+		return new ResponseEntity<TaskResponseMapper>(taskResponseMapper, HttpStatus.resolve(taskResponseMapper.getStatus()));
 		
 	}
 	
 	@GetMapping("/delete/{id}")
 	public ResponseEntity<TaskResponseMapper> deleteTask(@PathVariable String id){
-		TaskResponseMapper t = todoListService.deleteTask(id);
-		return new ResponseEntity<TaskResponseMapper>(t, HttpStatus.resolve(t.getStatus()));
+		TaskResponseMapper taskResponseMapper = todoListService.deleteTask(id);
+		return new ResponseEntity<TaskResponseMapper>(taskResponseMapper, HttpStatus.resolve(taskResponseMapper.getStatus()));
 		
 	}
 }
