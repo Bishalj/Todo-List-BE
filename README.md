@@ -9,7 +9,7 @@ Todo-List-BE is a backend project in which all the APIs are defined which is con
 
 ## Command to run the Todo-List-BE application
 - gradle bootRun
-Backend application will be up and running on http://localhost:8006/
+- Backend application will be up and running on http://localhost:8006/
 
 ## Dependencies required to run the Todo-List-FE application:
 1. git clone https://github.com/Bishalj/Todo-LIST-FE.git
@@ -21,7 +21,7 @@ Backend application will be up and running on http://localhost:8006/
 ## Command to run the Todo-List-FE application
 - npm install
 - ng serve
-UI application will be up and running on http://localhost:4200/
+- UI application will be up and running on http://localhost:4200/
 
 
 
