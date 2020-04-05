@@ -16,6 +16,7 @@ Backend application will be up and running on http://localhost:8006/
 2. NPM 6.3.0 (or higher version)
 3. Angular 7
 4. Angular CLI
+5. node v8.11.3
 
 ## Command to run the Todo-List-FE application
 - npm install
