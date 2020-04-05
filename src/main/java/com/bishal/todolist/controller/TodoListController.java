@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.bishal.todolist.mapper.TaskRequestMapper;
 import com.bishal.todolist.mapper.TaskResponseMapper;
-import com.bishal.todolist.service.impl.TodoListSearviceImpl;
+import com.bishal.todolist.service.impl.TodoListServiceImpl;
 
 @CrossOrigin("http://localhost:4200")
 @RestController
@@ -21,7 +21,7 @@ import com.bishal.todolist.service.impl.TodoListSearviceImpl;
 public class TodoListController {
 	
 	@Autowired
-	TodoListSearviceImpl todoListService;
+	TodoListServiceImpl todoListService;
 
 	@PostMapping("/addUpdate")
 	public ResponseEntity<TaskResponseMapper> addUpdateTask(@RequestBody TaskRequestMapper taskRequestMapper){

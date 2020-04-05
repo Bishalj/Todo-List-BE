@@ -15,7 +15,7 @@ import com.bishal.todolist.service.ITodoListService;
 import utils.TaskResponseUtils;
 
 @Service
-public class TodoListSearviceImpl implements ITodoListService{
+public class TodoListServiceImpl implements ITodoListService{
 
 	@Autowired
 	private ITodoListDao todoListDao;
